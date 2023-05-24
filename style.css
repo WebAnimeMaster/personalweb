@@ -1,0 +1,139 @@
+:root{
+    --main-color: #031634da;
+    --white-color:#fff;
+    --bg-tr:rgba(255,255,255, 0.1);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    transition: all 0.5s;
+}
+body{
+   background-color:var(--main-color);
+}
+.container{
+    height:100vh;
+}
+
+.header{
+    width:100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.navbar{
+    position: relative;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+}
+.nav-wrapper{
+    background-color: rgb(41, 38, 38);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    z-index: 999;
+}
+.nav-title{
+    display: flex;
+    justify-content: center;
+    /* background-color: red; */
+    width:100%;
+    flex: 1;
+}
+.nav-title-text{
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--white-color);
+}
+.leter{
+    color: rgb(233, 219, 28);
+}
+.nav-bars{
+    text-align:end;
+    flex:1;
+    font-weight: 700;
+    color:var(--white-color);
+    font-size: 2rem;
+    margin:1rem;
+}
+.show-links{
+    top:10%;
+}
+.hide-links{
+    top:-100%;
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color:var(--bg-tr);
+    position: fixed;
+    width:100%;
+    transition:all 0.5s;
+    z-index:99;
+    backdrop-filter: blur(4px);
+}
+.nav-link{
+    padding: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--white-color);
+    text-transform: capitalize;
+}
+.nav-link:hover{
+    font-weight: 700;
+}
+/* End Header */
+
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    /* background-color: red; */
+}
+
+.section{
+    width:100%;
+    display: grid;
+    place-items: center;
+    align-content: center;
+    color: var(--white-color);
+    /* background-color: aquamarine; */
+    height:100vh;
+}
+.title-section{
+    text-shadow: 1px 1px 1px black;
+}
+.button-about{
+    margin-top: 2rem;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 1rem;
+    color: var(--white-color);
+    text-shadow: 1px 1px 1px black;
+    background-color: rgb(233, 219, 28);
+    /* filter: blur(0.5px); */
+    border-radius: 2px;
+    box-shadow: inset -3px -3px 4px rgb(149, 145, 145),3px 3px 7px rgb(0, 0, 0);
+}
+
+
+
+
+@media only screen and (min-width:650px) {
+    body{
+        background-color: red;
+    }
+}
